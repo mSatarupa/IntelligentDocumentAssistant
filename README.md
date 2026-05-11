@@ -17,7 +17,7 @@ It combines **FastAPI**, **FAISS**, and **LLMs** to deliver fast, context-aware 
 * Automatic indexing after upload
 * Local vector storage (FAISS)
 
----
+
 
 ## Tech Stack
 
@@ -28,4 +28,3 @@ It combines **FastAPI**, **FAISS**, and **LLMs** to deliver fast, context-aware 
 * **Frontend:** HTML, CSS, JavaScript
 
 
----
