@@ -1,4 +1,6 @@
-Intelligent Document Assistant
+#  Intelligent Document Assistant
+
+## Overview
 
 This is a powerful **Retrieval-Augmented Generation (RAG)** based application that allows users to upload documents and ask questions about them in natural language.
 
@@ -17,7 +19,7 @@ It combines **FastAPI**, **FAISS**, and **LLMs** to deliver fast, context-aware 
 
 ---
 
-## 🏗️ Tech Stack
+## Tech Stack
 
 * **Backend:** FastAPI
 * **Vector DB:** FAISS
