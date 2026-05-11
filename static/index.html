@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Document Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+    <!-- Boxicons for elegant icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar for uploaded docs (optional/visual) -->
+        <aside class="sidebar">
+            <div class="brand">
+                <i class='bx bx-brain brand-icon'></i>
+                <h1>RAG <span>AI</span></h1>
+                Intelligent Document Assistant
+            </div>
+            
+            <div class="upload-section">
+                <button class="upload-btn" id="uploadBtn">
+                    <i class='bx bx-plus'></i>
+                    <span>New Document</span>
+                </button>
+                <input type="file" id="fileInput" accept=".txt,.pdf,.md,.json,.csv" hidden>
+            </div>
+
+            <div class="system-status">
+                <div class="status-indicator" id="statusIndicator"></div>
+                <span id="statusText">System Ready</span>
+            </div>
+        </aside>
+
+        <!-- Main Chat Interface -->
+        <main class="chat-interface">
+            <header class="chat-header">
+                <h2>Assistant Workspace</h2>
+                <p>Ask questions about your uploaded documents</p>
+            </header>
+
+            <div class="chat-container" id="chatContainer">
+                <div class="message system-msg">
+                    <div class="avatar"><i class='bx bx-bot'></i></div>
+                    <div class="msg-content">
+                        <p>Welcome to AI World! Upload a document to get started, or ask me anything if documents are already indexed.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <form id="queryForm" class="query-form glass-pill">
+                    <!-- Inline Plus Icon inside the input pill -->
+                    <button type="button" class="pill-btn upload-icon-btn" id="inlineUploadBtn" title="Upload Document">
+                        <i class='bx bx-plus-circle'></i>
+                    </button>
+                    
+                    <input type="text" id="queryInput" placeholder="Ask anything about your documents..." autocomplete="off">
+                    
+                    <button type="submit" class="pill-btn send-icon-btn" id="sendBtn" title="Send Query">
+                        <i class='bx bx-send'></i>
+                    </button>
+                </form>
+                <div class="footer-text">Powered by local RAG infrastructure <i class='bx bxs-zap' style="color:var(--accent-primary)"></i></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

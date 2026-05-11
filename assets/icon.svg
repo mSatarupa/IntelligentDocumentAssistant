@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <defs>
+    <linearGradient id="edge" x1="7" y1="8" x2="25" y2="26" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C4DFF"/>
+      <stop offset="1" stop-color="#24e2f8"/>
+    </linearGradient>
+    <radialGradient id="soft" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(15 10) rotate(90) scale(17 18)">
+      <stop stop-color="#7C4DFF" stop-opacity="0.38"/>
+      <stop offset="1" stop-color="#0f0f0f" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cover" x1="10" y1="8" x2="22" y2="26" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#642fd6"/>
+      <stop offset="1" stop-color="#1aa8bf"/>
+    </linearGradient>
+  </defs>
+  <rect width="32" height="32" rx="9" fill="#121212"/>
+  <rect width="32" height="32" rx="9" fill="url(#soft)"/>
+  <!-- open book -->
+  <path fill="url(#cover)" opacity="0.92" stroke="url(#edge)" stroke-width="1.25"
+    stroke-linejoin="round"
+    d="M16 7.75L10.25 11v11.25L16 25.75l5.75-3.5V11L16 7.75z"/>
+  <path stroke="url(#edge)" stroke-width="1.5" stroke-linecap="round" d="M16 10.25v13.25"/>
+</svg>
