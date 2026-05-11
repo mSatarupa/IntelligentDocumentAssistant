@@ -1,0 +1,9 @@
+langchain>=1.2.15
+langchain-community>=0.4.1
+fastapi>=0.136.1
+sentence-transformers>=5.4.1
+faiss-cpu>=1.13.2
+langchain-groq>=1.1.2
+pydantic>=2.13.3
+pymupdf>=1.27.2.3
+pypdf>=6.10.2
